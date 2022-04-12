@@ -11,8 +11,9 @@ for index, word in enumerate(wv.index_to_key):
 # model = gensim.models.Word2Vec(sentences=sentences)
 
 vec_king = wv['king']
+print(vec_king)
 vec_woman = wv['woman']
-
+print(vec_woman)
 vec_queen = vec_king + vec_woman
 print(vec_queen)
 print(wv.most_similar(positive=['woman', 'king'], negative=['man'], topn=1))
