@@ -16,4 +16,4 @@ vec_woman = wv['woman']
 vec_queen = vec_king + vec_woman
 print(vec_queen)
 print(wv.most_similar(positive=['woman', 'king'], negative=['man'], topn=1))
-
+print('hello world')
